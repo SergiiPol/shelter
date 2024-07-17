@@ -18,7 +18,7 @@ main {
     align-items: center;
     justify-content: center;
 }
-.wrapper_section1, .wrapper_section2, .wrapper_section3, .wrapper_section4 {
+.wrapper_section1, .wrapper_section2, .wrapper_section3, .wrapper_section4, .wrapper_section5 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +31,7 @@ main {
 .wrapper_section1-bg {
     background-image: url("/shelter/assets/start-screen-gradient-background.jpg");
 }
-.section_1, .section2, .section3, .section4 {
+.section_1, .section2, .section3, .section4, .section5 {
     width: 1280px;
     justify-self: center;   
 }
@@ -308,6 +308,9 @@ h1{
     border: none;
     margin-bottom: 10px;
 }
+.wrapper_section4-bg {
+    background: #FFFFFF;
+}
 .section4_wrapper {
     display: flex;
     flex-direction: column;
@@ -367,5 +370,77 @@ h1{
     letter-spacing: 0.08em;
     text-align: center;
     color: #545454;
-
+}
+.wrapper_section5-bg {
+    background-color: #F6F6F6;
+}
+.section5__conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.section5__conteiner_figure {
+    display: flex;
+    width: 505px;
+    height: 282px;
+}
+.section5__conteiner__article{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 282px;
+margin-top: -18px;
+justify-content: space-between;
+}
+.section5__conteiner__article_h3 {
+    width: 300px;
+    height: 90px;
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #545454;
+}
+.section5__conteiner__article_h5 {
+    font-family: Georgia;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16.5px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #545454;
+}
+.section5__conteiner__article__container-card {
+    display: flex;
+    width: 349px;
+    height: 43px;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #F1CDB3;
+}
+.section5__conteiner__article__container-card_span {
+    width: 274px;
+    height: 23px;
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #545454;
+    text-wrap: nowrap;
+}
+.section5__conteiner__article_p {
+    width: 380px;
+    height: 72px;
+    color: #B2B2B2;
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
 }
