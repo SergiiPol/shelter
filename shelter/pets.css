@@ -30,30 +30,34 @@ main {
     justify-content: center;
 }
 .wrapper_header,
+.wrapper_our-friends,
 .wrapper_footer {
     display: flex;
     align-items: center;
     justify-content: center;
     top: 0;
     left: 0;
-    min-width: 100vw;
+    min-width: calc(100vw - 17px);
     background-size: cover;
     background-position: center;
 }
 .wrapper_header-bg {
     background: #FFFFFF;
 }
+.wrapper_our-friends-bg {
+    background: #F6F6F6;
+}
 .wrapper_footer-bg {
     background-image: url("/shelter/assets/start-screen-gradient-background.jpg");
 }
-.header, 
+.header,
+.article_our-friends,
 .footer {
     width: 1280px;
     justify-self: center;   
 }
 .header {
     display: flex; 
-    margin-top: 30px;
     justify-content: center;
 }
 .header_nav {
@@ -69,6 +73,13 @@ main {
     justify-content: space-between;
     width: 184px;
     height: 60px;
+}
+.header_nav_logo_a {
+    display: flex;
+    height: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 h1{
     width: 184px;
@@ -115,6 +126,131 @@ h1{
     text-underline-offset: 6px;
     text-decoration-thickness: 3px;
     text-decoration-color: #F1CDB3;
+}
+.article_our-friends {
+    width: 1200px;
+    height: 1162px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;   
+}
+.article__h2 {
+    width: 400px;
+    height: 90px;
+    font-family: Georgia;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #545454;
+    margin-top: -8px;
+}
+.article__slider-img-container {
+    display: flex;
+    height: 930px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.article__slider-img-container_slider-item {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 435px;
+    align-items: center;
+    justify-content:flex-start;
+    border-radius: 9px;
+    background: #FAFAFA;
+    cursor: pointer;
+}
+.article__slider-img-container_slider-item:hover {
+    background: #FFFFFF;
+}
+.article__slider-img-container_slider-item:hover
+.article__slider-img-container_slider-button-item {
+    background-color: #FDDCC4;
+  }
+.article__slider-img-container_slider-item-figure {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-between;
+}
+.article__slider-img-container_slider-item-figure-img {
+    margin-top: 0;
+}
+.article__slider-img-container_slider-figcapion {
+    display: flex;
+    justify-content: center;
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22.72px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #545454;
+    margin-top: 30px;
+}
+.article__slider-img-container_slider-button-item {
+    width: 187px;
+    height: 52px;
+    padding: 15px 45px 15px 45px;
+    font-family: Georgia;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.1px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    border-radius: 100px;
+    border: 2px 2px 2px 2px;
+    color:#292929;
+    border: 2px solid #F1CDB3;
+    background-color: #FAFAFA;
+    text-wrap: nowrap;
+    margin-top: 52px;
+}
+.article__buttons-container {
+    display: flex;
+    width: 340px;
+    height: 52px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.article__buttons-container_button {
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    border: 2px solid #F1CDB3;
+}
+.article__buttons-container_button:hover {
+    background: #FDDCC4;
+}
+.article__buttons-container_button:disabled {
+    border: 2px solid #CDCDCD;
+    cursor: default;
+}
+.article__buttons-container_button:disabled:hover {
+    border: 2px solid #CDCDCD;
+    background: transparent;
+}
+.article__buttons-container_page-number {
+    display: flex;
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    background-color:#F1CDB3;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #292929;
 }
 
 
