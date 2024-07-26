@@ -46,7 +46,7 @@ main {
 }
 .wrapper_section1-bg,
 .wrapper_footer-bg {
-    background-image: url("/shelter/assets/start-screen-gradient-background.jpg");
+    background-image: url("../shelter/assets/start-screen-gradient-background.jpg");
 }
 .section_1, 
 .section2, 
