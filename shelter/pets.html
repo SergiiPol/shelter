@@ -15,15 +15,15 @@
     <main>
       <div class="wrapper_header wrapper_header-bg" style="height: 120px">
         <header class="header">
+          <div class="header_nav_logo">
+            <a href="main.html" class="header_nav_logo_a">
+              <h1>Cozy House</h1>
+              <span class="header__nav_div_span"
+                >Shelter for pets in Boston</span
+              ></a
+            >
+          </div>
           <nav class="header_nav">
-            <div class="header_nav_logo">
-              <a href="main.html" class="header_nav_logo_a">
-                <h1>Cozy House</h1>
-                <span class="header__nav_div_span"
-                  >Shelter for pets in Boston</span
-                ></a
-              >
-            </div>
             <ul class="header_nav_ul">
               <li class="header_nav_ul_li">
                 <a href="main.html">About the shelter</a>
@@ -37,11 +37,13 @@
               </li>
             </ul>
           </nav>
+          <div class="header__burger-menu" onclick="openMenu()">
+            <span></span>
+          </div>
         </header>
       </div>
       <div
         class="wrapper_our-friends wrapper_our-friends-bg our-friends-container"
-        style="height: 1342px"
       >
         <article class="article_our-friends">
           <h2 class="article__h2">
