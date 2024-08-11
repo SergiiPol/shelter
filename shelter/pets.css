@@ -46,6 +46,7 @@ main {
 }
 .wrapper_our-friends-bg {
   background: #f6f6f6;
+  height: 1342px;
 }
 .wrapper_footer-bg {
   background-image: url("../shelter/assets/start-screen-gradient-background.jpg");
@@ -53,16 +54,20 @@ main {
 .header,
 .article_our-friends,
 .footer {
-  width: 1280px;
+  min-width: 1280px;
   justify-self: center;
 }
 .header {
+  min-width: 1200px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+.header__burger-menu {
+  display: none;
 }
 .header_nav {
   display: flex;
-  width: 1200px;
+  width: 443px;
   height: 60px;
   align-items: center;
   justify-content: space-between;
@@ -197,7 +202,7 @@ h1 {
 .article__slider-img-container_slider-button-item {
   width: 187px;
   height: 52px;
-  padding: 14px 46px 15px 43px;
+  padding: 15px 45px 15px 45px;
   font-family: Georgia;
   font-size: 17px;
   font-weight: 400;
@@ -311,4 +316,32 @@ h1 {
 .footer__figure {
   display: flex;
   margin-top: 40px;
+}
+@media (max-width: 950px) and (min-width: 768px) {
+  .header,
+  .article_our-friends,
+  .footer {
+    min-width: 768px;
+    justify-self: center;
+  }
+  .header {
+    min-width: 708px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__burger-menu {
+    display: none;
+  }
+  .header_nav {
+    display: flex;
+    width: 443px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .article_our-friends {
+    width: 708px;
+    /* height: 1603px;
+    margin-top: 120px; */
+  }
 }
