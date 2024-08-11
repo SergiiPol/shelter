@@ -117,3 +117,8 @@ console.log(
   "\n",
   "36) обязательное требование к интерактивности: плавное изменение внешнего вида элемента при наведении и клике, не влияющее на соседние элементы (2 балла)"
 );
+function openMenu() {
+  let burger = document.querySelector(".header__burger-menu");
+  burger.classList.toggle("open");
+}
+console.log(window.innerWidth, window.innerHeight);

@@ -14,17 +14,17 @@
   <body>
     <main>
       <div class="wrapper_section1 wrapper_section1-bg">
-        <div class="section_1" style="height: 908px">
+        <div class="section_1">
           <header class="section_1__header">
+            <div class="section_1__header_nav_logo">
+              <a href="#" class="header_nav_logo_a">
+                <h1>Cozy House</h1>
+                <span class="header__nav_div_span"
+                  >Shelter for pets in Boston</span
+                ></a
+              >
+            </div>
             <nav class="section_1__header_nav">
-              <div class="section_1__header_nav_logo">
-                <a href="#" class="header_nav_logo_a">
-                  <h1>Cozy House</h1>
-                  <span class="header__nav_div_span"
-                    >Shelter for pets in Boston</span
-                  ></a
-                >
-              </div>
               <ul class="section_1__header_nav_ul">
                 <li class="section_1__header_nav_ul_li">About the shelter</li>
                 <li class="section_1__header_nav_ul_li">
@@ -38,11 +38,17 @@
                 </li>
               </ul>
             </nav>
+            <div class="header__burger-menu" onclick="openMenu()">
+              <span></span>
+            </div>
           </header>
           <article class="section_1__article">
             <div class="section_1__article_div">
               <h2 class="section_1__article_div_h2">
-                Not only people need a house
+                Not only people
+                <!-- prettier-ignore -->
+                <br>
+                need a house
               </h2>
               <p class="section_1__article_div_p">
                 We offer to give a chance to a little and nice puppy with an
@@ -53,27 +59,32 @@
                 >Make a friend</a
               >
             </div>
-            <div class="section_1__article_img">
+            <div class="section_1__article_div_img">
+              <source
+                srcset="../shelter/assets/start-screen-puppy.png"
+                media="(max-width: 950px) and (min-width: 768px)"
+              />
+              <source
+                srcset="../shelter/assets/start-screen-puppy-mobile.png"
+                media="(max-width: 767px) and (min-width: 320px)"
+              />
               <!-- prettier-ignore -->
               <img
                 src="../shelter/assets/start_pet.png"
                 alt="dog puppy"
-                width="698"
-                height="728"
+                class="section_1__article_img"
               >
             </div>
           </article>
         </div>
       </div>
-      <div class="wrapper_section2 wrapper_section2-bg" style="height: 588px">
+      <div class="wrapper_section2 wrapper_section2-bg">
         <article class="section2 wrapper_section2__article">
           <div class="section2__article_div-foto">
             <!-- prettier-ignore -->
             <img
               src="./assets/about-pets.png"
               alt="pets"
-              width="300"
-              height="408"
               class="section2__article_div-foto_img"
             >
           </div>
@@ -87,7 +98,9 @@
               others will continue to live with us and will be waiting for a
               lucky chance to become dearly loved.
             </p>
-            <p class="section2__article_div-info_p">
+            <p
+              class="section2__article_div-info_p section2__article_div-info_p2"
+            >
               We feed our wards with the best food and make sure that they do
               not get sick, feel comfortable (including psychologically) and
               well. We are supported by 87 volunteers and 28 employees of
@@ -98,11 +111,7 @@
           </div>
         </article>
       </div>
-      <div
-        id="our_friends"
-        class="wrapper_section3 wrapper_section3-bg"
-        style="height: 877px"
-      >
+      <div id="our_friends" class="wrapper_section3 wrapper_section3-bg">
         <article class="section3 section3_wrapper">
           <h2 class="article__h2">
             Our friends who
@@ -132,7 +141,7 @@
                   Learn more
                 </button>
               </div>
-              <div class="article__slider-wrapper_slider-item">
+              <div class="article__slider-wrapper_slider-item card-jennifer">
                 <figure class="article__slider-wrapper_slider-item-figure">
                   <!-- prettier-ignore -->
                   <img src="../shelter/assets/pets-jennifer.png" 
@@ -148,7 +157,7 @@
                   Learn more
                 </button>
               </div>
-              <div class="article__slider-wrapper_slider-item">
+              <div class="article__slider-wrapper_slider-item card-woody">
                 <figure class="article__slider-wrapper_slider-item-figure">
                   <!-- prettier-ignore -->
                   <img src="../shelter/assets/pets-woody.png" 
@@ -175,11 +184,7 @@
           >
         </article>
       </div>
-      <div
-        id="help_the_shelter"
-        class="wrapper_section4 wrapper_section4-bg"
-        style="height: 611px"
-      >
+      <div id="help_the_shelter" class="wrapper_section4 wrapper_section4-bg">
         <article class="section4 section4_wrapper">
           <h2 class="section4__h2">How you can help our shelter</h2>
           <div class="section4__div-conteiner">
@@ -268,16 +273,19 @@
           </div>
         </article>
       </div>
-      <div class="wrapper_section5 wrapper_section5-bg" style="height: 462px">
+      <div class="wrapper_section5 wrapper_section5-bg">
         <div class="section5 section5_wrapper">
           <div class="section5__conteiner">
             <figure class="section5__conteiner_figure">
+              <source
+                srcset="../shelter/assets/donation-dog-mobile.png"
+                media="(max-width: 767px) and (min-width: 320px)"
+              />
               <!-- prettier-ignore -->
               <img
                 src="./assets/donation-dog.png"
                 alt="dog"
-                width="505"
-                height="261"
+                class="section5__conteiner_figure_img"
               >
             </figure>
             <article class="section5__conteiner__article">
@@ -317,11 +325,7 @@
           </div>
         </div>
       </div>
-      <div
-        id="contacts"
-        class="wrapper_footer wrapper_footer-bg"
-        style="height: 350px"
-      >
+      <div id="contacts" class="wrapper_footer wrapper_footer-bg">
         <footer class="footer footer_wrapper">
           <section class="footer__section1">
             <h3 class="footer__section__h3">For questions and suggestions</h3>
@@ -363,7 +367,7 @@
           </section>
           <section class="footer__section2">
             <h3 class="footer__section__h3">We are waiting for your visit</h3>
-            <div class="footer__section__div">
+            <div class="footer__section__div footer__section__div__section2">
               <a
                 href="https://www.google.com/maps/place/40.748817,-73.985428"
                 target="_blank"
@@ -383,7 +387,7 @@
                 </figure>
               </a>
             </div>
-            <div class="footer__section__div">
+            <div class="footer__section__div footer__section__div__section2">
               <a
                 href="https://www.google.com/maps/place/40.748817,-73.985428"
                 target="_blank"
@@ -404,15 +408,18 @@
               </a>
             </div>
           </section>
-          <figure class="footer__figure">
+          <picture class="footer__figure">
+            <source
+              srcset="../shelter/assets/footer-puppy-mobile.png"
+              media="(max-width: 767px) and (min-width: 320px)"
+            />
             <!-- prettier-ignore -->
             <img
               src="./assets/footer-puppy.png"
               alt="Puppy"
-              width="300"
-              height="310"
+              class=".footer__figure_img"
             >
-          </figure>
+          </picture>
         </footer>
       </div>
     </main>
