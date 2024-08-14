@@ -107,7 +107,7 @@
                 Learn more
               </button>
             </div>
-            <div class="article__slider-img-container_slider-item">
+            <div class="article__slider-img-container_slider-item card-sophia">
               <figure class="article__slider-img-container_slider-item-figure">
                 <!-- prettier-ignore -->
                 <img src="../shelter/assets/pets-sophia.png" 
@@ -125,7 +125,7 @@
                 Learn more
               </button>
             </div>
-            <div class="article__slider-img-container_slider-item">
+            <div class="article__slider-img-container_slider-item card-timmy">
               <figure class="article__slider-img-container_slider-item-figure">
                 <!-- prettier-ignore -->
                 <img src="../shelter/assets/pets-timmy.png" 
@@ -143,7 +143,7 @@
                 Learn more
               </button>
             </div>
-            <div class="article__slider-img-container_slider-item">
+            <div class="article__slider-img-container_slider-item card-charly">
               <figure class="article__slider-img-container_slider-item-figure">
                 <!-- prettier-ignore -->
                 <img src="../shelter/assets/pets-charly.png" 
@@ -211,11 +211,7 @@
           </div>
         </article>
       </div>
-      <div
-        id="contacts"
-        class="wrapper_footer wrapper_footer-bg"
-        style="height: 350px"
-      >
+      <div id="contacts" class="wrapper_footer wrapper_footer-bg">
         <footer class="footer footer_wrapper">
           <section class="footer__section1">
             <h3 class="footer__section__h3">For questions and suggestions</h3>
@@ -256,8 +252,10 @@
             </div>
           </section>
           <section class="footer__section2">
-            <h3 class="footer__section__h3">We are waiting for your visit</h3>
-            <div class="footer__section__div">
+            <h3 class="footer__section__h3 footer__section__h3_section2">
+              We are waiting for your visit
+            </h3>
+            <div class="footer__section__div .footer__section__div__section2">
               <a
                 href="https://www.google.com/maps/place/40.748817,-73.985428"
                 target="_blank"
@@ -298,15 +296,18 @@
               </a>
             </div>
           </section>
-          <figure class="footer__figure">
+          <picture class="footer__figure">
+            <source
+              srcset="../shelter/assets/footer-puppy-mobile.png"
+              media="(max-width: 767px) and (min-width: 320px)"
+            />
             <!-- prettier-ignore -->
             <img
             src="../shelter/assets/footer-puppy.png"
             alt="Puppy"
-            width="300"
-            height="310"
+            class=".footer__figure_img"
           >
-          </figure>
+          </picture>
         </footer>
       </div>
     </main>
