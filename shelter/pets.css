@@ -384,21 +384,18 @@ h1 {
   }
   .footer_wrapper {
     min-width: calc(100vw - 17px);
-    min-height: 639px;
     justify-content: center;
     align-content: flex-end;
     flex-wrap: wrap;
     gap: 60px;
   }
-  .wrapper_footer-bg {
-    min-height: 639px;
-  }
+
   .footer__section1,
   .footer__section2 {
     margin-bottom: -35px;
   }
 }
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 768px) and (min-width: 320px) {
   .header,
   .article_our-friends,
   .footer {
@@ -509,12 +506,12 @@ h1 {
   }
   .footer_wrapper {
     display: flex;
+    flex-direction: column;
     min-width: calc(100vw - 17px);
-    height: 809px;
-    align-content: stretch;
+    max-height: 809px;
+    align-content: center;
     margin-top: 30px;
     justify-content: center;
-    align-content: flex-end;
     flex-wrap: wrap;
     gap: 60px;
   }
